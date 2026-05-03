@@ -180,22 +180,22 @@ export const documents = [
   {
     id: 3,
     category: "checklist",
-    title: "Topic Assessment Checklist",
-    description: "Supervisor-reviewed checklist for research topic validation and academic alignment assessment.",
+    title: "checklist 1",
+    description: "Checklist for academic alignment assessment.",
     status: "completed",
     date: "2024-01-28",
-    fileType: "PDF",
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
+    fileType: "zip",
+    link: "CheckList set 1.zip",
   },
   {
     id: 4,
     category: "checklist",
-    title: "Progress Review Checklist",
-    description: "Mid-term milestone checklist verifying all system components meet intermediate delivery criteria.",
+    title: "checklist 2",
+    description: "Checklist for academic alignment assessment.",
     status: "completed",
     date: "2024-05-10",
-    fileType: "PDF",
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
+    fileType: "zip",
+    link: "CheckList set 2.zip",
   },
   {
     id: 5,
@@ -230,7 +230,7 @@ export const presentations = [
       "Proposed system architecture",
       "Research timeline & deliverables"
     ],
-    link: "introduction-to-the-overall-project.pptx",
+    link: "Introduction to the Overall Project.pptx",
     thumbnail: null
   },
   {
@@ -260,7 +260,7 @@ export const presentations = [
     subtitle: "Integrated System & Advanced Analytics",
     category: "progress2",
     date: "2024-09-10",
-    displayDate: "September 10, 2024",
+    displayDate: "September 10, 2025",
     status: "completed",
     slides: 9,
     duration: "30 minutes",
@@ -283,7 +283,7 @@ export const presentations = [
     date: "2025-01-20",
     displayDate: "May 04, 2026",
     status: "upcoming",
-    slides: 56,
+    slides: 0,
     duration: "45 minutes",
     presenter: "Full Team",
     description: "Final comprehensive presentation covering all research contributions, experimental results, system performance, and impact assessment.",
@@ -293,7 +293,7 @@ export const presentations = [
       "Research contributions & novelty",
       "Future work & publications"
     ],
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
+    link: null,
     thumbnail: null
   }
 ];

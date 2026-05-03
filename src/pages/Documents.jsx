@@ -169,7 +169,7 @@ export default function Documents() {
             </div>
           </div>
           <a
-            href="https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing"
+            href="https://drive.google.com/drive/folders/1zHJtGBGAIPD3prDiq-Amm6bpo_9KGl2h?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary flex-shrink-0"
