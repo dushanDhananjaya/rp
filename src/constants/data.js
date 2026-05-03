@@ -96,7 +96,7 @@ export const milestones = [
       "Project timeline & Gantt chart"
     ],
     presentationLink: null,
-    documentLink: "public\\sample-local-pdf.pdf"
+    documentLink: "\\sample-local-pdf.pdf"
   },
   {
     id: 2,
