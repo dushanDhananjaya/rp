@@ -96,7 +96,6 @@ export const milestones = [
       "Project timeline & Gantt chart"
     ],
     presentationLink: "\\Introduction to the Overall Project.pptx",
-    documentLink: "\\sample-local-pdf.pdf"
   },
   {
     id: 2,
@@ -114,8 +113,7 @@ export const milestones = [
       "Preliminary model benchmarks",
       "Revised methodology"
     ],
-    presentationLink: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
-    documentLink: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing"
+    presentationLink: "PP1 presentation.pptx",
   },
   {
     id: 3,
@@ -133,8 +131,7 @@ export const milestones = [
       "Evaluation metrics & results",
       "Updated system architecture"
     ],
-    presentationLink: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
-    documentLink: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing"
+    presentationLink: "PP2 presentation.pptx",
   },
   {
     id: 4,
