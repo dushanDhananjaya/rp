@@ -95,7 +95,7 @@ export const milestones = [
       "Preliminary methodology",
       "Project timeline & Gantt chart"
     ],
-    presentationLink: null,
+    presentationLink: "\\Introduction to the Overall Project",
     documentLink: "\\sample-local-pdf.pdf"
   },
   {
