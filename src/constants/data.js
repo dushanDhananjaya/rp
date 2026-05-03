@@ -165,7 +165,7 @@ export const documents = [
     status: "completed",
     date: "2024-01-20",
     fileType: "PDF",
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
+    link: "charter.pdf",
   },
   {
     id: 2,
@@ -177,11 +177,21 @@ export const documents = [
     fileType: "PDF",
     link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
   },
+    {
+    id: 5,
+    category: "final",
+    title: "Final Research Paper",
+    description: "IEEE-formatted research paper documenting MANŌ system design, experiments, results, and contributions to the field.",
+    status: "completed",
+    date: "2025-01-15",
+    fileType: "PDF",
+    link: "Manō_Research_Paper.pdf",
+  },
   {
     id: 3,
     category: "checklist",
-    title: "checklist 1",
-    description: "Checklist for academic alignment assessment.",
+    title: "Checklist 1",
+    description: "Checklist for academic alignment assessment .",
     status: "completed",
     date: "2024-01-28",
     fileType: "zip",
@@ -190,23 +200,14 @@ export const documents = [
   {
     id: 4,
     category: "checklist",
-    title: "checklist 2",
+    title: "Checklist 2",
     description: "Checklist for academic alignment assessment.",
     status: "completed",
     date: "2024-05-10",
     fileType: "zip",
     link: "CheckList set 2.zip",
   },
-  {
-    id: 5,
-    category: "final",
-    title: "Final Research Paper",
-    description: "IEEE-formatted research paper documenting MANŌ system design, experiments, results, and contributions to the field.",
-    status: "completed",
-    date: "2025-01-15",
-    fileType: "PDF",
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
-  },
+
  
 ];
 
