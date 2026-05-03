@@ -218,7 +218,7 @@ export const presentations = [
     subtitle: "Problem Definition & Proposed Methodology",
     category: "proposal",
     date: "2024-02-15",
-    displayDate: "February 15, 2024",
+    displayDate: "February 15, 2025",
     status: "completed",
     slides: 23,
     duration: "20 minutes",
@@ -230,7 +230,7 @@ export const presentations = [
       "Proposed system architecture",
       "Research timeline & deliverables"
     ],
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
+    link: "introduction-to-the-overall-project.pptx",
     thumbnail: null
   },
   {
@@ -239,11 +239,11 @@ export const presentations = [
     subtitle: "Proof-of-Concept & Early Results",
     category: "progress1",
     date: "2024-05-22",
-    displayDate: "May 22, 2024",
+    displayDate: "May 22, 2025",
     status: "completed",
     slides: 16,
     duration: "25 minutes",
-    presenter: "Tharindu & Kavindi",
+    presenter: "Full Team",
     description: "Mid-term presentation showcasing the emotion detection prototype, NLP pipeline benchmarks, and initial dataset curation results.",
     highlights: [
       "Emotion detection prototype demo",
@@ -251,7 +251,7 @@ export const presentations = [
       "Dataset pipeline walkthrough",
       "Preliminary accuracy metrics"
     ],
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
+    link: "PP1 presentation.pptx",
     thumbnail: null
   },
   {
@@ -272,7 +272,7 @@ export const presentations = [
       "User study preliminary results",
       "System scalability analysis"
     ],
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
+    link: "PP2 presentation.pptx",
     thumbnail: null
   },
   {
@@ -281,7 +281,7 @@ export const presentations = [
     subtitle: "Complete System, Results & Contributions",
     category: "final",
     date: "2025-01-20",
-    displayDate: "January 20, 2025",
+    displayDate: "May 04, 2026",
     status: "upcoming",
     slides: 56,
     duration: "45 minutes",
