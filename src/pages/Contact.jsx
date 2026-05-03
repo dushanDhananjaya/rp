@@ -8,9 +8,9 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Research Inquiries',
-    value: 'mano.research@sliit.lk',
+    value: 'mano@gmail.com',
     color: '#8b5cf6',
-    href: 'mailto:mano.research@sliit.lk',
+    href: 'mano@gmail.com',
   },
   {
     icon: Phone,
