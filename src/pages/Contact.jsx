@@ -5,9 +5,9 @@ import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Clock, Loader2 } f
 import { fadeInUp, staggerContainer, staggerFast } from '../animations/variants';
 
 // ─── EmailJS config — replace these after setting up your account ────────────
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz456'
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'aBcDeFgHiJkLmNoP'
+const EMAILJS_SERVICE_ID  = 'service_nzswmba';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'template_fiviexs';  // e.g. 'template_xyz456'
+const EMAILJS_PUBLIC_KEY  = 'TCg3_eVi8BJ_Yq2lM';   // e.g. 'aBcDeFgHiJkLmNoP'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const contactInfo = [
