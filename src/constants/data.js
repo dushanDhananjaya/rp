@@ -175,7 +175,7 @@ export const documents = [
     status: "completed",
     date: "2024-02-15",
     fileType: "PDF",
-    link: "https://drive.google.com/drive/folders/1LhT7DlK1l9NBCyAl4O-BwBbURatYmRYt?usp=sharing",
+    link: "proposal.pdf",
   },
     {
     id: 5,
