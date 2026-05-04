@@ -1,16 +1,23 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Clock, Loader2 } from 'lucide-react';
 import { fadeInUp, staggerContainer, staggerFast } from '../animations/variants';
+
+// ─── EmailJS config — replace these after setting up your account ────────────
+const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';   // e.g. 'service_abc123'
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz456'
+const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';   // e.g. 'aBcDeFgHiJkLmNoP'
+// ─────────────────────────────────────────────────────────────────────────────
 
 const contactInfo = [
   
   {
     icon: Mail,
     label: 'Research Inquiries',
-    value: 'mano@gmail.com',
+    value: 'visitmanoplatform@gmail.com',
     color: '#8b5cf6',
-    href: 'mano@gmail.com',
+    href: 'mailto:visitmanoplatform@gmail.com',
   },
   {
     icon: Phone,
@@ -53,11 +60,28 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    // Simulate send (replace with actual email service)
-    await new Promise(r => setTimeout(r, 1800));
-    setStatus('success');
-    setFormState({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setStatus('idle'), 5000);
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name:    formState.name,
+          from_email:   formState.email,
+          subject:      formState.subject,
+          message:      formState.message,
+          reply_to:     formState.email,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      setStatus('success');
+      setFormState({ name: '', email: '', subject: '', message: '' });
+      setTimeout(() => setStatus('idle'), 5000);
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
   };
 
   return (
@@ -261,6 +285,12 @@ export default function Contact() {
                       <span>Message Sent!</span>
                     </>
                   )}
+                  {status === 'error' && (
+                    <>
+                      <AlertCircle size={16} />
+                      <span>Failed to Send</span>
+                    </>
+                  )}
                 </motion.button>
 
                 {/* Success message */}
@@ -274,6 +304,21 @@ export default function Contact() {
                     <CheckCircle size={18} className="text-emerald-400 flex-shrink-0" />
                     <p className="text-emerald-300 text-sm">
                       Thank you! We've received your message and will respond within 1–2 business days.
+                    </p>
+                  </motion.div>
+                )}
+
+                {/* Error message */}
+                {status === 'error' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="flex items-center gap-3 p-4 rounded-xl"
+                    style={{ background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.3)' }}
+                  >
+                    <AlertCircle size={18} className="text-red-400 flex-shrink-0" />
+                    <p className="text-red-300 text-sm">
+                      Something went wrong. Please try again or email us directly at mano@gmail.com.
                     </p>
                   </motion.div>
                 )}
